@@ -5,12 +5,16 @@ env\Scripts\activate
 
 
 pip install cmake
+
 pip install boost
+
 pip install wget
-conda install -c anaconda swig
+
+pip install swing
 
 pip install Box2D  
-pip install boost-py                          
+
+pip install boost-py                      
 pip install pygame   
 
 ## integrantes de equipo
@@ -18,3 +22,4 @@ pip install pygame
 - Balbuena Bello Victor Antonio
 - Barcenas Miranda Martín
 - Valladares Peralta Luis Angel
+
