@@ -16,3 +16,4 @@ pip install pygame
 ## integrantes de equipo
 - Roque Ayala Angel David
 - Balbuena Bello Victor Antonio
+- Barcenas Miranda Martín
