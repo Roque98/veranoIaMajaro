@@ -2,7 +2,7 @@
 python -m venv env
 
 env\Scripts\activate.bat
-pip install bokeh
+
 
 pip install cmake
 pip install boost
