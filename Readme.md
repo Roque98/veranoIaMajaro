@@ -23,4 +23,6 @@ pip install gym
 - Balbuena Bello Victor Antonio
 - Barcenas Miranda Martín
 - Valladares Peralta Luis Angel
+- Marco Antonio Hernandez Guzman 
+
 
