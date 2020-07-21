@@ -24,5 +24,5 @@ pip install gym
 - Barcenas Miranda Martín
 - Valladares Peralta Luis Angel
 - Marco Antonio Hernandez Guzman 
-
+- Ramirez Ventura Elvira
 
