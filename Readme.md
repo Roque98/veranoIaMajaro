@@ -1,4 +1,6 @@
 # Documentacion de instalacion para entornos gym y 2BOX
+python -m venv env
+
 env\Scripts\activate.bat
 pip install bokeh
 
