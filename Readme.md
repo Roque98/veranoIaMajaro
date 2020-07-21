@@ -14,3 +14,4 @@ pip install boost-py
 pip install pygame   
 
 ## integrantes de equipo
+- Roque Ayala Angel David
