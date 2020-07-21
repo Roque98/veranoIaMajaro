@@ -17,3 +17,4 @@ pip install pygame
 - Roque Ayala Angel David
 - Balbuena Bello Victor Antonio
 - Barcenas Miranda Martín
+- Valladares Peralta Luis Angel
