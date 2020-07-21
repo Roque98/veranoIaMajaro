@@ -1,7 +1,7 @@
 # Documentacion de instalacion para entornos gym y 2BOX
 python -m venv env
 
-env\Scripts\activate.bat
+env\Scripts\activate
 
 
 pip install cmake
