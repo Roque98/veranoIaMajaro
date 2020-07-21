@@ -16,6 +16,7 @@ pip install Box2D
 
 pip install boost-py                      
 pip install pygame   
+pip install gym
 
 ## integrantes de equipo
 - Roque Ayala Angel David
