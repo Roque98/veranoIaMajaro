@@ -12,3 +12,5 @@ conda install -c anaconda swig
 pip install Box2D  
 pip install boost-py                          
 pip install pygame   
+
+## integrantes de equipo
