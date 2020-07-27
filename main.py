@@ -130,25 +130,56 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_2.setText(_translate("MainWindow", "Acrobot-v1"))
         self.pushButton.setText(_translate("MainWindow", "Abrir entorno"))
-        self.pushButton.clicked.connect(self.llamarEntornoPrueba)
+        self.pushButton.clicked.connect(self.llamarEntornoMartin)
         self.label_3.setText(_translate("MainWindow", "CartPole-v1"))
         self.pushButton_2.setText(_translate("MainWindow", "Abrir entorno"))
+        self.pushButton_2.clicked.connect(self.llamarEntornoMarco)
         self.pushButton_3.setText(_translate("MainWindow", "Abrir entorno"))
+        self.pushButton_3.clicked.connect(self.llamarEntornoElvira)
         self.label_5.setText(_translate("MainWindow", "MountainCar-v0"))
         self.label_7.setText(_translate("MainWindow", "MountainCarContinuous-v0"))
         self.pushButton_4.setText(_translate("MainWindow", "Abrir entorno"))
+        self.pushButton_5.clicked.connect(self.llamarEntornoValladares)
         self.label_9.setText(_translate("MainWindow", "BipedalWalker"))
         self.label_10.setText(_translate("MainWindow", "Pendulum-v0"))
         self.pushButton_5.setText(_translate("MainWindow", "Abrir entorno"))
+        self.pushButton_4.clicked.connect(self.llamarEntornoBalbuena)
         self.pushButton_6.setText(_translate("MainWindow", "Abrir entorno"))
+        self.pushButton_6.clicked.connect(self.llamarEntornoRoque)
         self.label_13.setText(_translate("MainWindow", "Menu de entornos"))
 
     # Acciones de los botones
-    def llamarEntornoPrueba(self):
+
+        
+    def llamarEntornoBalbuena(self):
+        #self.text.setText(random.choice(self.hello))
+        #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
+        print(call(["python", "run_gym_enviroment.py", "Pendulum-v0", "200"]))
+
+    def llamarEntornoElvira(self):
+        #self.text.setText(random.choice(self.hello))
+        #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
+        print(call(["python", "run_gym_enviroment.py", "MountainCar-v0", "200"]))
+
+    def llamarEntornoMarco(self):
         #self.text.setText(random.choice(self.hello))
         #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
         print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
-        
+
+    def llamarEntornoMartin(self):
+        #self.text.setText(random.choice(self.hello))
+        #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
+        print(call(["python", "run_gym_enviroment.py", "Acrobot-v1", "200"]))
+
+    def llamarEntornoRoque(self):
+        #self.text.setText(random.choice(self.hello))
+        #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
+        print(call(["python", "run_gym_enviroment.py", "BipedalWalker-v3", "200"]))
+
+    def llamarEntornoValladares(self):
+        #self.text.setText(random.choice(self.hello))
+        #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
+        print(call(["python", "run_gym_enviroment.py", "MountainCarContinuous-v0", "200"]))
 
 from resourse import BipedalWalker
 from resourse import MountainCarContinuous
