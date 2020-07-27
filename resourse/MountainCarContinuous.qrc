@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="c5">
+    <file>../images/MountainCarContinuous.PNG</file>
+  </qresource>
+</RCC>

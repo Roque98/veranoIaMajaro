@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="c1">
+    <file>../images/Acrobot.PNG</file>
+  </qresource>
+</RCC>
