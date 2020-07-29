@@ -6,7 +6,7 @@ import threading
 ## https://github.com/openai/gym
 ## https://gym.openai.com/docs/
 
-## https://gym.openai.com/envs/MountainCar-v0/
+## https://gym.openai.com/envs/MountainCarContinuous-v0/
 ## https://github.com/openai/gym/wiki/MountainCar-v0
 
 silent = False
@@ -15,19 +15,23 @@ def printif(string):
 
 def saveQ(name='_Checkpoint', txtCopy=False):
     # Saves a copy of the Q-table in numpy's .npy format, and optionally in .txt format.
-    path = r"D:\\Coding\\Machine Learning\\OpenAI Gym\\MountainCar\\"
+    # path = r"D:\\Coding\\Machine Learning\\OpenAI Gym\\MountainCar\\"
+    path = r"C:\\Users\\LUIS\\ReposValla\\veranoIaMajaro\\Valladares\\"
     np.save(path + "MC_Qtable" + name + ".npy", Q)
     np.savetxt(path + "MC_Qtable" + name + ".txt", Q)
 
 def loadQ(name='_Checkpoint'):
     # Loads a saved Q-table
-    path = r"D:\\Coding\\Machine Learning\\OpenAI Gym\\MountainCar\\"
+    path = r"C:\\Users\\LUIS\\ReposValla\\veranoIaMajaro\\Valladares\\"
+    # path = r"D:\\Coding\\Machine Learning\\OpenAI Gym\\MountainCar\\"
     return np.load(path + "MC_Qtable" + name + ".npy")
 
 
 
 # Load environment
 env = gym.make('MountainCar-v0')
+#env = gym.make('MountainCarContinuous-v0')
+
 
 ## Environment Notes ##
 # obsvs come in a two-dim vector (p, v)
@@ -199,5 +203,3 @@ for ep in range(ep_offset, episodes + ep_offset):
     if ((ep+1) % 25 == 0):
         saveQ(txtCopy=True)
         printif ("|-- Q-table checkpoint saved.".format(t, total_reward))
-
-        
