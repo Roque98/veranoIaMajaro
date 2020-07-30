@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 #este metodo no suele ser muy necesario para implementacion de agentes 
 #pero en este caso nos resulta muy util cuando el espacio de estados es grande y continuo 
-#lo que se puede hacer aqui es divir en cjas o rangos de valores para simplificar su representacion 
+#lo que se puede hacer aqui es divir en cajas o rangos de valores para simplificar su representacion 
 #esto tambien reduce el numero de valores que necesita aprender 
 #
 #comenzamos a dividir nuestro entorno 
@@ -58,4 +58,3 @@ def discretize(self, obs):#cada una de las obsevaciones que recibamos
         
         #con esto decidira de forma aleatoria, elegira acciones al azar, conforme avanza ira tomando valores 
         #para maximizar el radio de aprendizaje
->>>>>>> 66b915a2aa1bd0fe650c8b7071f516973d5ec0aa
