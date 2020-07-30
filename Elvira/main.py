@@ -5,7 +5,8 @@ Created on Tue Jul 28 21:23:46 2020
 @author: Toshiba Elvira
 """
 
- #METODO PARA ENTRENAR AL AGENTE     
+ #METODO PARA ENTRENAR AL AGENTE
+      
 def train(agent, environment):   # aqui definimos el metodo train en la cual tendremos un agente y un enrtorno que es enviroment
        best_reward = -float('inf')   # definimos la mejor recompensa que sera menos float infinito 
        for episode in range(MAX_NUM_EPISODES):   # definimos los episodios 
