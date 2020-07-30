@@ -169,12 +169,12 @@ class Ui_MainWindow(object):
     def llamarEntornoMartin(self):
         #self.text.setText(random.choice(self.hello))
         #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
-        print(call(["python", "run_gym_enviroment.py", "Acrobot-v1", "200"]))
+        print(call(["python", "Martin/main.py"]))
 
     def llamarEntornoRoque(self):
         #self.text.setText(random.choice(self.hello))
         #print(call(["python", "run_gym_enviroment.py", "CartPole-v1", "200"]))
-        print(call(["python", "run_gym_enviroment.py", "BipedalWalker-v3", "200"]))
+        print(call(["python", "Roque/main.py"]))
 
     def llamarEntornoValladares(self):
         #self.text.setText(random.choice(self.hello))
