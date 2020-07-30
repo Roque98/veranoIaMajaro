@@ -92,25 +92,27 @@ class Qlearner(object):
         
         
         
-def train(agent, environment):
-    best_reward = -float('inf')
-    for episode in range(MAX_NUM_EPISODES):
-        done  = False
-        obs = environment.reset()
-        total_reward = 0.0
-        while not done:
-            #environment.render()
-            action = agent.get_action(obs)
-            next_obs, reward, done, info = environment.step(action)
-            agent.learn(obs, action, reward, next_obs)
-            obs = next_obs
-            total_reward += reward
-        if total_reward > best_reward:
-            best_reward = total_reward
-        print("Episodio número {} con recompensa: {}, mejor recompensa: {}, epsilon: {}".format(episode, total_reward, best_reward, agent.epsilon))
+ #METODO PARA ENTRENAR AL AGENTE
+      
+def train(agent, environment):   # aqui definimos el metodo train en la cual tendremos un agente y un enrtorno que es enviroment
+       best_reward = -float('inf')   # definimos la mejor recompensa que sera menos float infinito 
+       for episode in range(MAX_NUM_EPISODES):   # definimos los episodios 
+        done  = False     #definimos la variable done por defecto es false
+        obs = environment.reset() #
+        total_reward = 0.0 # recompensa total acomulado en 0
+    while not done:   # definimos un bucle la cual mientras no hayamos finalizado la ejecusion 
+            action = agent.get_action(obs)   # accion elegida segun la ecuacion de Q-learning
+            next_obs, reward, done, info = environment.step(action)  # definimos los parametros y hara que el enviroment ejecute el .step
+            agent.learn(obs, action, reward, next_obs)   #con esta accion hacemos que el agente aprenda en base a la observacion
+            obs = next_obs   # esta es la siguiente observacion para ejecutar el siguiente paso
+            total_reward += reward  # la recompensa se incrementa
+    if total_reward > best_reward: #fijamos si la recompensa total supera a la actual
+            best_reward = total_reward  # entonces sera recompensa anterior es igual a la recompensa actual.
+print("Episodio número {} con recompensa: {}, mejor recompensa: {}, epsilon: {}".format(episode, total_reward, best_reward, agent.epsilon)) #aqui imprimimos el episodio y el epsilon para ver con que valor termina
         
-        
-    return np.argmax(agent.Q, axis = 2)
+## de todas las politicas de entrenamiento que se han obtenido se devuelve laa mejor de todas
+return np.argmax(agent.Q, axis = 2) 
+
 
 #queremos ser capacez de medir como ha ido todo lo que ha aprendido sometiendolo a una prueba, un test
 def test(agent, environment, policy): #dado el agente, dado el entorno y dada la política de actuación ver como la ha ido
