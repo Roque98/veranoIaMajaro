@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="c6">
+    <file>../images/Pendulum.PNG</file>
+  </qresource>
+</RCC>

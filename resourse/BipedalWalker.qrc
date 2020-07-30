@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="c3">
+    <file>../images/BipedalWalker.PNG</file>
+  </qresource>
+</RCC>

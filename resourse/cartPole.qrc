@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="c2">
+    <file>../images/CartPole.PNG</file>
+  </qresource>
+</RCC>

@@ -26,3 +26,5 @@ pip install gym
 - Marco Antonio Hernandez Guzman 
 - Ramirez Ventura Elvira
 
+## Compilar interfaz
+python -m PyQt5.uic.pyuic -x [FILENAME].ui -o [FILENAME].py
