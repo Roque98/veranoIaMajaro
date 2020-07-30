@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Importamos lsa librerias que vamos a utilizar 
 import gym 
 import random
@@ -68,7 +67,6 @@ def model_data_preparation():
 	print(acepted_scores)
 	return training_data
 
-
 #Con esta funcion cosntruimos nuestro modelo osea nuestra red neuronal
 def build_model(input_size, output_size):
 	model = Sequential()
@@ -87,6 +85,7 @@ def train_model(training_data):
 
 scores = []#inicializamos puntuaciones y arreglos de elecciones 
 choices = []
+
 for each_game in range(100): #jugamos 100 partidas 
     
     env.render()
@@ -97,23 +96,3 @@ for each_game in range(100): #jugamos 100 partidas
         #entonces tomamos esa observacion y se la damos a nuestro 
         #modelo para predecir que accion debemos tomar 
         action =np.argmax(trained_model.predict(prev_obs.reshape(-1, len)))
-        
-=======
-import gym
-import sys
-
-def run_gym_enviroment(argv):
-	## Inicia el entorno elegido con el primer parametro
-	env = gym.make(argv[1])
-	observation = env.reset()
-	for _ in range(1000):
-		env.render()
-		action = env.action_space.sample() # your agent here (this takes random actions)
-		observation, reward, done, info = env.step(action)
-		if done:
-			observation = env.reset()
-	env.close()
-
-if __name__ == "__main__":
-	run_gym_enviroment(sys.argv)
->>>>>>> 66b915a2aa1bd0fe650c8b7071f516973d5ec0aa

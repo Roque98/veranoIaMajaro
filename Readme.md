@@ -24,5 +24,7 @@ pip install gym
 - Barcenas Miranda Martín
 - Valladares Peralta Luis Angel
 - Marco Antonio Hernandez Guzman 
+- Ramirez Ventura Elvira
 
-
+## Compilar interfaz
+python -m PyQt5.uic.pyuic -x [FILENAME].ui -o [FILENAME].py
