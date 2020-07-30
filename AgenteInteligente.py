@@ -94,7 +94,7 @@ def train(agent, environment):
         
     return np.argmax(agent.Q, axis = 2)
 
-#queremos ser capacez de medir como ha ido todo lo que ha aprendido sometiendolo a una prueba, un test
+#queremos ser capaces de medir como ha ido todo lo que ha aprendido sometiendolo a una prueba, un test
 def test(agent, environment, policy): #dado el agente, dado el entorno y dada la política de actuación ver como la ha ido
     #devolver la recompensa global del episodio
     #en este caso no le dejamos que actualice el valor de qlearning
