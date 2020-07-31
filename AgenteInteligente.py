@@ -110,8 +110,9 @@ def train(agent, environment): # aqui definimos el metodo train en la cual tendr
         if total_reward > best_reward: #fijamos si la recompensa total supera a la actual
             best_reward = total_reward # entonces sera recompensa anterior es igual a la recompensa actual.
         print("Episodio número {} con recompensa: {}, mejor recompensa: {}, epsilon: {}".format(episode, total_reward, best_reward, agent.epsilon)) #aqui imprimimos el episodio y el epsilon para ver con que valor termina
-## de todas las politicas de entrenamiento que se han obtenido se devuelve laa mejor de todas
-        return np.argmax(agent.Q, axis = 2) 
+        
+        
+    return np.argmax(agent.Q, axis = 2)
 
 
 #queremos ser capaces de medir como ha ido todo lo que ha aprendido sometiendolo a una prueba, un test
